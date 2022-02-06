@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="lab.css"/>
+</head>
+<body>
+    
+    
+    <section>
+        <header>
+            <h1>Lab Test Form</h1>
+            <p>Read below instructions before proceeding:<br> Make sure you fill all the fields where * is provided</p>
+        </header>
+        >
+           <div id="ad">
+            
+            <img src ="images/Lab-Test/lab-test.jpg" > 
+           </div>
+             <form class= "form" action="">
+            
+                <article>
+                <h2>1. Your Contact Details</h2>
+                <p>Full Name <input type="text" title="name" required> Patient Id If exists
+                <input type="number" > </p>
+                <p>Phone No  <input type="number" min="6000000000" max="9999999999" required>
+                Email Address <input type="email" required> </p>
+                </article>
+
+            <article>
+                <h2>2. Address</h2>
+                <p>H:No</p>
+                <input type="text" required>
+
+                <p>Street</p>
+                <input type="text" required>
+
+                <p>Area</p>
+                <input type="text" required>
+
+                <p>District</p>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Cochin">Cochin</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                </select>
+            </article>
+
+            <article>
+                <h2>Choose the Test Type </h2>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone">
+                <label for="c3">Thyroid Stimulating Hormone</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="Glucose Test">
+                <label for="c3">Glucose Test</label>
+            </article>
+
+            <article>
+                <p>Do you want a hard copy of the report also</p>
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            </article>
+
+            
+            <article>
+                <p>Select your Date and Time</p>
+                <input type="datetime-local" value="datetime-local" required>
+                
+            </article>
+            
+            
+        </form>
+        <footer>
+            <button>Reset</button>
+             <button>Submit</button>
+            This form is developed by Binny as part of graded project
+        </footer>
+        
+    </section>
+    
+    
+</body>
+</html>

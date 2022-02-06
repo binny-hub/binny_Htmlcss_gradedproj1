@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(253, 243, 223);
+}
+header{
+    border-radius: 5px;
+    height: auto;
+    text-align: center;
+    background-color: rgb(192, 149, 233);
+}
+footer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+#ad{
+    position:fixed;
+    z-index: -1;
+    right:200px;
+    margin-top: 0%;
+    /*display:inline-block; */ 
+    float:right;  
+    margin-left:10px;
+
+                         
+}
+#ad img{
+    width: 550px;
+    height:375px;
+}
+
+p, h1{
+    padding: 5px;
+    margin: 0%;
+}
+section{
+    position: absolute;
+    top: 5%;
+    width: 80%;
+    left: 5%;
+    height : 500px;
+    border: 2px solid rgb(0,0,0);
+    overflow: scroll;
+}
+
+article{
+    width :50%;
+    min-width: 100px;
+    margin-top: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    background-color: white;
+    /* background-color: tomato; */
+}
+
+input{
+    width: 100px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+input, label, p, #district{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    display: block;
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    float: left;
+    border: none;
+    background-color: rgb(175, 102, 243);
+}
+#district{
+    height: 50px;
+}
+/* combinator selector */
+header p{
+    text-align: left;
+}
+article p{
+    font-weight: bold;
+    font-family: Helvetica ;
+    letter-spacing: 2px;
+    
+}
+
+/* pseudo class selector */
+input:focus{
+    outline: none;
+    background-color: gainsboro;
+}
+
+/* pseudo element selector */
+header p::first-line{
+    font-weight: bold;
+    color: rgb(76, 0, 255);
+}
+article p::after{
+    content: "*";
+    color: red;
+}
+
+/* attribute selector */
+input[name^="option"]{
+    width: 20px;
+    height: 20px;
+}
+
+#form{
+    display:inline-block;
+    vertical-align:top;
+    padding-left:0%;
+    width: 45%;
+    }
